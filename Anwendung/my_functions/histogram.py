@@ -1,5 +1,7 @@
 import numpy as np
-def histogrammstretching(img,a,b):
+def histogrammstretching(img):
+    a=0
+    b=255
     c = min(img.ravel())
     d = max(img.ravel())
     img_copy = img.copy()
