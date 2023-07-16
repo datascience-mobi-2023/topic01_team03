@@ -1,5 +1,5 @@
 import numpy as np
-def multi_otsu_thresholding1(img1):
+def twolevel_thresholding(img1):
     
     #Kopie des Bildes machen und glätten
     imgT = img1.copy()
@@ -108,7 +108,7 @@ def multi_otsu_thresholding1(img1):
             imgT[p] = 0
     return imgT
 
-def multi_otsu_thresholding2(img1):
+def twolevel_thresholding2(img1):
     
     #Kopie des Bildes machen und glätten
     imgT = img1.copy()
