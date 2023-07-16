@@ -9,25 +9,33 @@ def local_thresholding(img, window_size):
 
     Args:
         img (_type_): Input image
-        window_size (_type_): 
+        window_size (_type_): size of an edge of the sliding window
 
     Returns:
-        _type_: _description_
+        _type_: locally thresholded image
     """
     import numpy as np
+    
+    #define top and bottom rows of the image
     half_window = window_size // 2
     top_rows = img[:half_window, :][::-1, :]
     bottom_rows = img[-half_window:, :][::-1, :]
-    #Matrix zusammenfügen
+    
+    #expand the image by mirroring the top and bottom rows
     imgM = np.concatenate((top_rows, img, bottom_rows), axis=0)
     
-    # Äußere Spalten spiegeln und erweitern
+    #define left and right columns of the image
     left_cols = imgM[:, :half_window][:, ::-1]
     right_cols = imgM[:, -half_window:][:, ::-1]
+    
+    #expand the image by mirroring the left and right columns
     imgM = np.concatenate((left_cols, imgM, right_cols), axis=1)
     imgT = imgM.copy()
+    
+    #define height and width of the mirrored image
     height, width = imgM.shape[:2]
 
+    
     for y in range(half_window, height - half_window):
         for x in range(half_window, width - half_window):
             window = imgM[y - half_window : y + half_window + 1, x - half_window : x + half_window + 1]

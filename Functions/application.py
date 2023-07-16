@@ -53,7 +53,7 @@ def applyfilter(filter,input_path,result_path,S):
         result = filter(io.imread(file_path),size = S)
         io.imsave(result_file_path,result)
         
-def anwendunggauss(function,input_path,result_path,S):
+def applygauss(function,input_path,result_path,S):
     import os
     from skimage import io
     files = os.listdir(input_path)
