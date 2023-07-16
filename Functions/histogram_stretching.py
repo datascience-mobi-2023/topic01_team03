@@ -1,5 +1,5 @@
 
-def histogramm_stretching(img):
+def histogram_stretching(img):
     """
     This function takes an input image as a parameter and performs histogram stretching. The intensity values of the image are
     stretched, so that the lowest intensity value is 0 and the highest intensity value is 255. The stretched image is returned.
@@ -31,7 +31,7 @@ def histogramm_stretching(img):
     return img_copy
 
 
-def histogramm_stretching2(img):
+def histogram_stretching2(img):
     """
     This function takes an input image as a parameter and performs histogram stretching. The intensity values of the image are
     stretched, so that the lowest intensity value is 0 and the highest intensity value is  65535. The stretched image is returned.
