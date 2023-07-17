@@ -152,14 +152,14 @@ def applyfilter(filter,input_path,result_path,S):
         #save the result in the result folder
         io.imsave(result_file_path,result)
         
-def applygauss(function,input_path,result_path,S):
+def applygauss(filter,input_path,result_path,S):
     """
     This function applies the gaussian filter for a given sigma value S to a whole folder of images and stores the results in 
     a different folder. It iterates over all images in the folder and for each image creates a path to the input image and the 
     result image. It then applies the filter on the input image and stores the result in the result folder.
 
     Args:
-        filter (callable): The filter to be applied to each image (gauss filter)
+        filter (callable): The filter to be applied to each image (gaussian filter)
         input_path (str): The path to the folder containing the input images
         result_path (str): The path to the folder where the results will be saved
         S (int): sigma value
