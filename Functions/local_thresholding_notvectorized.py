@@ -91,10 +91,10 @@ def local_thresholding(img, window_size):
                 var_obj = var_sum_obj / sum_obj
  
                 #calculate within class variance
-                within_class_varianz = w0 * var_back + w1 * var_obj
+                within_class_variance = w0 * var_back + w1 * var_obj
                 
                 #append within class variance to the list
-                variance_list.append(within_class_varianz)
+                variance_list.append(within_class_variance)
  
             #define optimal threshold value by selecting minimal within class variance value 
             THRESH = bins[np.argmin(variance_list)]
@@ -202,10 +202,10 @@ def local_thresholding2(img, window_size):
                 var_obj = var_sum_obj / sum_obj
  
                 #calculate within class variance
-                within_class_varianz = w0 * var_back + w1 * var_obj
+                within_class_variance = w0 * var_back + w1 * var_obj
                 
                 #append within class variance to the list
-                variance_list.append(within_class_varianz)
+                variance_list.append(within_class_variance)
  
             #define optimal threshold value by selecting minimal within class variance value 
             THRESH = bins[np.argmin(variance_list)]

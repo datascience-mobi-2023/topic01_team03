@@ -77,11 +77,11 @@ def multi_otsu_thresholding_vek(img1):
 
             #calculate within class variance
             
-            within_class_varianz = w0 * var_back + w1 * var_mid + w2 * var_obj
+            within_class_variance = w0 * var_back + w1 * var_mid + w2 * var_obj
         
             #append within class variance to the list
             
-            variance_list.append(within_class_varianz)
+            variance_list.append(within_class_variance)
             
             #append thresholds to list
             
@@ -179,11 +179,11 @@ def multi_otsu_thresholding_vek2(img1):
 
             #calculate within class variance
             
-            within_class_varianz = w0 * var_back + w1 * var_mid + w2 * var_obj
+            within_class_variance = w0 * var_back + w1 * var_mid + w2 * var_obj
         
             #append within class variance to the list
             
-            variance_list.append(within_class_varianz)
+            variance_list.append(within_class_variance)
             
             #append thresholds to list
             
