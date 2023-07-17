@@ -1,3 +1,4 @@
+import numpy as np
 def otsu_thresholding_vek(img1):
     """
     This function takes an input image as a parameter and returns a binary image where pixels are either set to 0 or 255.
@@ -6,13 +7,11 @@ def otsu_thresholding_vek(img1):
     The image is clipped based on the optimal threshold value and the binarized image is returned.
 
     Args:
-        img1 (_type_): Input image
+        img1 (np.ndarray): Input image
 
     Returns:
-        _type_: Thresholded image
+        np.ndarray: Thresholded image
     """
-    
-    import numpy as np
     
     #create copy of the input image and flatten image
     imgT = img1.copy()
@@ -67,13 +66,11 @@ def otsu_thresholding_vek2(img1):
     The image is clipped based on the optimal threshold value and the binarized image is returned.
 
     Args:
-        img1 (_type_): Input image
+        img1 (np.ndarray): Input image
 
     Returns:
-        _type_: Thresholded image
+        np.ndarray: Thresholded image
     """
-    
-    import numpy as np
     
     #create copy of the input image and flatten image
     imgT = img1.copy()

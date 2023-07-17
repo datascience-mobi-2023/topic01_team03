@@ -1,18 +1,16 @@
-
+import numpy as np
 def histogram_stretching(img):
     """
     This function takes an input image as a parameter and performs histogram stretching. The intensity values of the image are
     stretched, so that the lowest intensity value is 0 and the highest intensity value is 255. The stretched image is returned.
 
     Args:
-        img (_type_): _Input image
+        img (np.ndarray): Input image
     
 
     Returns:
-        _type_: stretched image
+        np.ndarray: stretched image
     """
-    
-    import numpy as np
     
     #define highest and lowest intensity values of the returned image as 0 and 255
     a = 0
@@ -37,14 +35,12 @@ def histogram_stretching2(img):
     stretched, so that the lowest intensity value is 0 and the highest intensity value is  65535. The stretched image is returned.
 
     Args:
-        img (_type_): _Input image
+        img (np.ndarray): Input image
     
 
     Returns:
-        _type_: stretched image
+        np.ndarray: stretched image
     """
-    
-    import numpy as np
     
     #define highest and lowest intensity values of the returned image as 0 and  65535
     a = 0

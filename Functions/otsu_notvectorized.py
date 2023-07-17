@@ -1,5 +1,4 @@
 import numpy as np
-
 def otsu_thresholding(img1):
     """
     This function takes an input image as a parameter and returns a binary image where pixels are either set to 0 or 255.
@@ -8,10 +7,10 @@ def otsu_thresholding(img1):
     The image is clipped based on the optimal threshold value and the binarized image is returned.
 
     Args:
-        img1 (_type_): Input image
+        img1 (np.ndarray): Input image
 
     Returns:
-        _type_: Thresholded image
+        np.ndarray: Thresholded image
     """
  
     #create copy of the input image and flatten image
@@ -26,7 +25,7 @@ def otsu_thresholding(img1):
     variance_list = list()
     
 
-    #calculate the within class variance for each possible threshold
+    #iterate over each possible threshold
     for T in range(1,len(counts)):
         
         #background
@@ -87,6 +86,7 @@ def otsu_thresholding(img1):
             imgT[p] = 255
     return imgT
 
+
 def otsu_thresholding2(img1):
     """
     This function takes an input image as a parameter and returns a binary image where pixels are either set to 0 or 65535.
@@ -95,10 +95,10 @@ def otsu_thresholding2(img1):
     The image is clipped based on the optimal threshold value and the binarized image is returned.
 
     Args:
-        img1 (_type_): Input image
+        img1 (np.ndarray): Input image
 
     Returns:
-        _type_: Thresholded image
+        np.ndarray: Thresholded image
     """
  
     #create copy of the input image and flatten image
@@ -113,7 +113,7 @@ def otsu_thresholding2(img1):
     variance_list = list()
     
 
-    #calculate the within class variance for each possible threshold
+    #iterate over each possible threshold
     for T in range(1,len(counts)):
         
         #background

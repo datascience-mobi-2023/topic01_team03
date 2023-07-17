@@ -1,3 +1,4 @@
+import numpy as np
 def dice(img1, img2):
     """
     This function takes two binary images as parameters and returns the Dice coefficient between them. It converts the input 
@@ -6,13 +7,13 @@ def dice(img1, img2):
    
 
     Args:
-        img1 (_type_): Input image 1
-        img2 (_type_): Input image 2
+        img1 (np.ndarray): Input image 1
+        img2 (np.ndarray): Input image 2
 
     Returns:
-        _type_: dice score
+        float: dice score
     """
-    import numpy as np
+    
     #convert images into boolean arrays
     img1 = np.asarray(img1).astype(bool)
     img2 = np.asarray(img2).astype(bool)
