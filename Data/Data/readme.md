@@ -1,0 +1,2 @@
+## Data
+Here you can find our three Datasets each containing images, ground truth images and ground truth images, that were binarized. The first Dataset consists out of 6 images of around 10 to 20 mouse embryonic stemm cells The second Dataset consits out of 4 images of around 35 to 55 human epithelial cells of cervical cancer. And the third Dataset consists out of 18 mouse emryonic fibroblast cells, with around 50 to 70 nuclei in each image.
