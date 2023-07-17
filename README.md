@@ -24,6 +24,6 @@ The last dataset consists of 18 images of mouse embryonic fibroblast cells which
 
 1. [Applications](https://github.com/datascience-mobi-2023/topic01_team03/tree/main/applications):application of the preprocessing methods and the different otsu algorithms on the different datasets
 2. [Project Proposal](https://github.com/datascience-mobi-2023/topic01_team03/tree/main/Project%20Proposal): all files that belong to the project proposal
-3. [Functions] (https://github.com/datascience-mobi-2023/topic01_team03/tree/main/Functions): all the functions that we use in a package
+3. [Functions](https://github.com/datascience-mobi-2023/topic01_team03/tree/main/Functions): all the functions that we use in a package
 4. [Report]()
 5. [Tutorium](https://github.com/datascience-mobi-2023/topic01_team03/tree/main/Tutorium): just files for us, that were reused every weak for the tutorium
